@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Testing AerialSpaces: Virtual Event Software as a Service </title>
+    <meta name="description" content="">
+    <meta property="og:image" content="assets/images/favicon.ico">
+</head>
+
+<body class="">
+    <!-- Header Image -->
+    <div
+        class="headerImg relative flex justify-start items-center flex-col w-full h-[40vh] lg:h-[120vh] bg-cover bg-[url('/assets/images/header-bg.jpg')] font-sans">
+        <div class="overlay absolute bg-[rgba(0,0,0,0.6)] w-full h-full"></div>
+        <div class="z-10 w-full h-[90%] flex justify-center items-center flex-col text-center text-content  uppercase">
+            <h2 class="text-[25px] lg:text-[80px] text-white font-semibold">VIRTUAL EVENT SaaS</h2>
+            <div class="text-[25px] lg:text-[80px] text-fade w-[70%] h-[100px] text-[#37c6f5] mb-[30px] cursor-default">
+                <swiper-container class="mySwiper" autoplay="true" dir="rtl" loop="true">
+                    <swiper-slide>
+                        <p>Unlimited Options </p>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>Clean Design</p>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <p>1-Click To Join</p>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="cta md:mt-[20px] lg:mt-[90px]">
+                <a href=""
+                    class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Request
+                    Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Menu -->
+    <header
+        class="sticky z-40 flex justify-center items-center w-full top-0 bg-white border-b border-[#e7e7e7] shadow-[#f3f3f3] shadow-sm">
+        <div class="wrapper relative px-[15px] w-full lg:w-[1170px] flex justify-between overflow-hidden">
+            <div class="nav-left flex items-center">
+                <a href="" class="logo">
+                    <img src="assets/images/logo.jpg" class="" alt="">
+                </a>
+            </div>
+
+            <div class="nav-right flex items-center ">
+                <div class="menuButton z-[5] absolute right-20  ">
+                    <i
+                        class="block lg:hidden fa-solid fa-bars cursor-pointer text-2xl px-[10px] border border-[#ddd]"></i>
+                </div>
+                <nav class="gap-4 hidden lg:flex ">
+                    <ul class="flex gap-10 uppercase text-[#636363]">
+                        <li class="cursor-pointer"><a href="javascript:void(0)">Home</a></li>
+                        <li class="cursor-pointer"><a onclick="bringToView('.FeatureContent')">Features</a></li>
+                        <li class="cursor-pointer"><a onclick="triggerLightBox('form')">Sign-up</a></li>
+                    </ul>
+                </nav>
+                <nav class="relative ml-4 ">
+                    <ul>
+                        <li onclick="showSearchForm()"><span
+                                class="cursor-pointer bg-[#37c6f5] text-white py-[5px] px-[15px]"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span></li>
+                        <form
+                            class="searchFrm translate-x-[200%] transition-all ease-in-out delay-100 absolute z-20 right-12 top-0 bg-white w-[200px] lg:w-[700px] ">
+                            <input type="text" required placeholder="What're you looking for ?"
+                                class="border-b border-[#37c6f5] bg-white w-full active:border-0 focus:border-0">
+                            <button type="submit" class="hidden">Search</button>
+                        </form>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav class="mobileNav absolute z-20 left-0 -bottom-[120%] gap-4 hidden w-full bg-[#ccc] shadow-lg">
+            <ul class="flex flex-col uppercase text-[#636363] w-full ">
+                <li><a class="block px-3 hover:text-[#37c6f5] py-2 text-center" href="/">Home</a></li>
+                <li><a class="block px-3 hover:text-[#37c6f5] py-2 text-center"
+                        onclick="bringToView('.FeatureContent')">Features</a></li>
+                <li><a class="block px-3 hover:text-[#37c6f5] py-2 text-center"
+                        onclick="triggerLightBox('form')">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Content -->
+    <section class="FeatureContent content flex justify-center items-center w-full py-10">
+        <div class="wrapper px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="content-container flex justify-center items-center flex-col w-full">
+                <h1 class="text-[36px] text-center leading-8">AERIALSPACES CUSTOMIZES VIRTUAL EXPERIENCES</h1>
+                <div class="2col-container flex justify-between items-center flex-wrap w-full pt-12 gap-x-2 gap-y-14">
+                    <div
+                        class="card relative p-6 pt-12 flex flex-col justify-center items-center w-full lg:w-[48%] gap-2 rounded shadow-xl border-2 border-gray-200 ">
+                        <i
+                            class="absolute top-[-45px] flex justify-center items-center w-20 h-20 rounded-full p-5 text-3xl text-white bg-[#008eed] fa-solid fa-film"></i>
+                        <span class="card-title uppercase text-[26px] text-[#636363]">High Quality Archives</span>
+                        <span class="card-description-text">All live beams are automatically recorded and can be made
+                            private/public as soon as the broadcast ends. Giving you full control over how your content
+                            is shared.</span>
+                    </div>
+
+                    <div
+                        class="card relative p-6 pt-12 flex flex-col justify-center items-center w-full lg:w-[48%] gap-2 rounded shadow-xl border-2 border-gray-200 ">
+                        <i
+                            class="absolute top-[-45px] flex justify-center items-center w-20 h-20 rounded-full p-5 text-3xl text-white bg-[#008eed] fa-solid fa-image"></i>
+                        <span class="card-title uppercase text-[26px] text-[#636363]">Multi-View Screenshare</span>
+                        <span class="card-description-text">With Virtual Events, experience comes first. Our multi-view
+                            screenshare allows non-stop direct interaction between presenters & attendees when sharing
+                            supplemental content, such as slides, or video.</span>
+                    </div>
+
+                    <div
+                        class="card relative p-6 pt-12 flex flex-col justify-center items-center w-full lg:w-[48%] gap-2 rounded shadow-xl border-2 border-gray-200 ">
+                        <i
+                            class="absolute top-[-45px] flex justify-center items-center w-20 h-20 rounded-full p-5 text-3xl text-white bg-[#008eed] fa-solid fa-message"></i>
+                        <span class="card-title uppercase text-[26px] text-[#636363]">Unlimited Integrations</span>
+                        <span class="card-description-text">Enhance your live video with infinite widget integrations,
+                            including Slideshare, Twitter, Google Docs, Soundcloud, YouTube and more.</span>
+                    </div>
+
+                    <div
+                        class="card relative p-6 pt-12 flex flex-col justify-center items-center w-full lg:w-[48%] gap-2 rounded shadow-xl border-2 border-gray-200 ">
+                        <i
+                            class="absolute top-[-45px] flex justify-center items-center w-20 h-20 rounded-full p-5 text-3xl text-white bg-[#008eed] fa-solid fa-user"></i>
+                        <span class="card-title uppercase text-[26px] text-[#636363]">Broadcast to All Devices</span>
+                        <span class="card-description-text">AerialSpaces live beams are accessible via desktop browsers
+                            and mobile platforms. Attendees can access live spaces & archives at home or on the
+                            go.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Call to Action -->
+    <section
+        class="CTA relative flex justify-center items-center flex-col w-full h-[40vh] bg-cover bg-[url('/assets/images/testimonial-bg.jpg')] font-sans">
+        <div class="overlay absolute bg-[rgba(0,0,0,0.8)] w-full h-full"></div>
+        <div class="z-10 w-full h-[90%] flex justify-center items-center flex-col text-center text-content ">
+            <div class="text-[80px] text-fade lg:w-[70%] h-[100px] text-[#37c6f5] mb-[10px] cursor-default">
+                <h3 class="leading-6 text-[24px] text-white">Host an online webinar, training session, live panel or
+                    conference
+                    with ease.</h3>
+            </div>
+            <div class="cta md:mt-[5px] lg:mt-[10px]">
+                <a href=""
+                    class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">CREATE
+                    YOUR AERIALSPACE NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Company Slider -->
+    <section class="brands-carousals relative flex justify-center items-center flex-col w-full my-10">
+        <div class="wrapper px-[15px] w-full lg:w-[1170px] flex justify-between">
+            <div class="vertical-content flex flex-col justify-center items-center w-full gap-3">
+                <h1 class="text-[36px] text-[#636363]">HAPPY CUSTOMERS</h1>
+                <div class="slider w-full border-t border-gray-200">
+                    <swiper-container class="brandsSwiper" init="false">
+                        <swiper-slide><img src="assets/images/brand1.png"></swiper-slide>
+                        <swiper-slide><img src="assets/images/brand2.jpg"></swiper-slide>
+                        <swiper-slide><img src="assets/images/brand3.png"></swiper-slide>
+                        <swiper-slide><img src="assets/images/brand4.jpg"></swiper-slide>
+                        <swiper-slide><img src="assets/images/brand5.png"></swiper-slide>
+                        <swiper-slide><img src="assets/images/brand6.jpg"></swiper-slide>
+                    </swiper-container>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="bottom bg-[#242424] flex justify-center items-center flex-col">
+        <a href="/">
+            <img src="assets/images/logo.jpg" alt="Logo">
+        </a>
+
+        <ul class="flex gap-4 text-[#b8b8b8] flex-wrap my-6">
+            <li><a href=""><i
+                        class="flex justify-center items-center h-12 w-12 border rounded-full fa-brands fa-facebook-f hover:bg-[#3b3bb4] hover:text-white"></i></a>
+            </li>
+            <li><a href=""><i
+                        class="flex justify-center items-center h-12 w-12 border rounded-full fa-brands fa-twitter hover:bg-[#00aeff] hover:text-white"></i></a>
+            </li>
+            <li><a href=""><i
+                        class="flex justify-center items-center h-12 w-12 border rounded-full fa-brands fa-square-instagram hover:bg-[#ae00ff] hover:text-white"></i></a>
+            </li>
+            <li><a href=""><i
+                        class="flex justify-center items-center h-12 w-12 border rounded-full fa-brands fa-wordpress hover:bg-[#272774] hover:text-white"></i></a>
+            </li>
+            <li><a href=""><i
+                        class="flex justify-center items-center h-12 w-12 border rounded-full fa-solid fa-envelope hover:bg-[#b3417a] hover:text-white"></i></a>
+            </li>
+        </ul>
+
+        <footer class="border-[#434343] border-t py-10 w-full flex justify-center items-center text-lg text-white">
+            <p>Built with ❤ <a href="">@BSMdotCo</a></p>
+        </footer>
+        <a class="fixed cursor-pointer z-40 bottom-6 right-6 h-10 w-10 rounded-full border-2 bg-gray-200 text-[#00aeff] flex justify-center items-center hover:bg-[#00aeff] hover:text-white"
+            onclick="bringToView('.headerImg')" id="BackToTop"><i class="fas fa-chevron-up"></i></a>
+    </section>
+
+    <div
+        class="lightbox bg-[#000000ad] backdrop-blur-md z-50 fixed top-0 left-0 w-full h-screen justify-center items-center hidden">
+        <div onclick="triggerLightBox()"
+            class="closeBtn absolute right-0 top-0 cursor-pointer hover:bg-[#7a2020] bg-[#d34d4d] text-white w-10 h-10 flex justify-center items-center">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div
+            class="modalContent form p-10 w-[90%] lg:w-1/2 rounded-lg shadow-lg justify-center items-center bg-white hidden">
+
+            <form class="w-full">
+                <span class="heading text-xl text-center font-bold">
+                    Sign Up
+                </span>
+                <div class="nameContainer flex gap-3 w-full flex-col lg:flex-row">
+                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
+                        <label for="fName" class="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                        <input type="text" id="fName"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            required>
+                    </div>
+
+                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
+                        <label for="lName" class="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
+                        <input type="text" id="lName"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            required>
+                    </div>
+
+                </div>
+                <div class="mb-0 lg:mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input type="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        placeholder="name@example.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Your password</label>
+                    <input type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        required>
+                </div>
+                <div class="flex items-start mb-6">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 "
+                            required>
+                    </div>
+                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900">Remember me</label>
+                </div>
+                <button type="submit"
+                    class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] text-[11px] lg:text-sm font-semibold text-[#37c6f5] rounded  border-2 border-[#37c6f5] hover:text-white hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
