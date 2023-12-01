@@ -9,6 +9,25 @@
     /**/
 }
 
+.underline-yellow::before, .underline-blue::before, .underline-purple::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 80px;
+    bottom: -10px;
+    position: absolute;
+}
+
+.underline-yellow::before{
+    background-color: #ffcb6a;
+}
+.underline-blue::before{
+    background-color: #0cbbfc;
+}
+.underline-purple::before{
+    background-color: #7056FE;
+}
+
 swiper-container.brandsSwiper {
     width: 100%;
     height: fit-content;

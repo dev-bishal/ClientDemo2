@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>AerialSpaces: Virtual Event Software as a Service </title>
     <meta name="description" content="">
@@ -18,8 +19,7 @@
 
 <body class="">
     <!-- Header Image -->
-    <div
-        class="headerImg relative flex justify-start items-center flex-col w-full h-[40vh] lg:h-[120vh] bg-cover bg-[url('/assets/images/header-bg.jpg')] font-sans">
+    <div class="headerImg relative flex justify-start items-center flex-col w-full h-[40vh] lg:h-[120vh] bg-contain lg:bg-cover bg-[url('/assets/images/header-bg.jpg')] font-sans">
         <div class="overlay absolute bg-[rgba(0,0,0,0.6)] w-full h-full"></div>
         <div class="z-10 w-full h-[90%] flex justify-center items-center flex-col text-center text-content  uppercase">
             <h2 class="text-[25px] lg:text-[80px] text-white font-semibold">VIRTUAL EVENT SaaS</h2>
@@ -38,8 +38,8 @@
             </div>
 
             <div class="cta md:mt-[20px] lg:mt-[90px]">
-                <a href=""
-                    class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Request
+                <a onclick="triggerLightBox('form')"
+                    class=" cursor-pointer transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Request
                     Demo</a>
             </div>
         </div>
@@ -161,7 +161,7 @@
     </section>
 
     <!-- Section Company Slider -->
-    <section class="brands-carousals relative flex justify-center items-center flex-col w-full my-10">
+    <section class="brands-carousals overflow-hidden relative flex justify-center items-center flex-col w-full my-10">
         <div class="wrapper px-[15px] w-full lg:w-[1170px] flex justify-between">
             <div class="vertical-content flex flex-col justify-center items-center w-full gap-3">
                 <h1 class="text-[36px] text-[#636363]">HAPPY CUSTOMERS</h1>
@@ -182,13 +182,134 @@
 
     </section>
 
+    <!-- Section CTA 2 -->
+    <section class="hero2 relative flex justify-center items-center w-full h-screen bg-center bg-cover bg-[url('/assets/images/background.jpg')]">
+        <div class="overlay absolute bg-[rgba(0,0,0,0.2)] w-full h-full"></div>
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="vertical-content text-white flex flex-col justify-center lg:w-[60%] gap-3">
+                <h2 class="text-[56px] font-semibold  leading-[3.5rem]">The live event tool that delivers experiences</h2>
+                <p class="text-lg font-medium w-[60%] my-3">AerialSpaces lets you customize your online event space for meaningful and on-brand interactions.</p>
+                <a class="cursor-pointer transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded  bg-[#37c6f5] hover:bg-[#039ad2]" onclick="triggerLightBox('form')">Request a demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section details -->
+    <section class="details flex justify-center items-center w-full mt-10 lg:mb-40">
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="2col-container flex justify-between items-center flex-wrap w-full pt-12 gap-x-1 gap-y-14">
+                <div class="part w-full lg:w-[49%] relative yellow-dot pointer-events-none">
+                    <img src="assets/images/RR-demo.gif" class="w-[90%] z-10">
+                    <img src="assets/images/dots-yellow.svg" class="absolute -right-1 -top-4 -z-10">
+                </div>
+                <div class="part w-full lg:w-[49%] overflow-hidden">
+                    <h3 class="text-4xl mb-4 font-bold underline-yellow relative">Make your space your own</h3>
+                    <p class="text-lg mb-4 font-medium">Create your brand experience with unlimited integrations. Use our templates or design your own.</p>
+                    <div class="list mb-4 flex-col lg:flex-row flex lg:gap-10 ml-4 w-full leading-10 font-medium">
+                        <ul>
+                            <li>Interactive Film Festival</li>
+                            <li>Live Panel</li>
+                            <li>Virtual Conference</li>
+                        </ul>
+                        <ul>
+                            <li>Game Show</li>
+                            <li>Visual Podcast</li>
+                            <li>Training Session</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section details 2-->
+    <section class="details flex justify-center items-center w-full mt-10 pb-40 bg-[#f9f8ff]">
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="2col-container flex justify-between items-center flex-wrap w-full pt-12 gap-x-1 gap-y-14">
+                <div class="part w-full lg:w-[49%] overflow-hidden">
+                    <h3 class="text-4xl mb-4 font-bold underline-purple relative">Live engagement made easy</h3>
+                    <p class="text-lg mb-4 font-medium">Create space for attendees to talk with each other, and engage directly with slides, video, or live social media feeds. Only one click to join and no extra clutter.</p>
+                </div>
+                <div class="part w-full lg:w-[49%] relative yellow-dot pointer-events-none">
+                    <img src="assets/images/WebsiteGif1.gif" class="w-[90%] z-10">
+                    <img src="assets/images/dots-purple.svg" class="absolute -left-6 -bottom-8 -z-10">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section details 3-->
+    <section class="details flex justify-center items-center w-full mt-10 lg:mb-40">
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="2col-container flex justify-between items-center flex-wrap w-full pt-12 gap-x-1 gap-y-14">
+                <div class="part w-full lg:w-[49%] relative yellow-dot pointer-events-none">
+                    <img src="assets/images/smiling-with-iphone.png" class="w-[90%] z-10">
+                    <img src="assets/images/blue-dots.svg" class="absolute -right-1 -top-4">
+                </div>
+                <div class="part w-full lg:w-[49%] overflow-hidden">
+                    <h3 class="text-4xl mb-4 font-bold underline-blue relative">Meaningful connections</h3>
+                    <p class="text-lg mb-4 font-medium">In-tool call to actions make it easy for attendees to take the next step.</p>
+                    <p class="text-lg mb-4 font-medium">Whether you are selling merchandise, promoting a hashtag, or launching a new product, your participants will take away the information they really need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section details 4-->
+    <section class="details flex justify-center items-center w-full mt-10 pb-40">
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="2col-container flex justify-between items-center flex-wrap w-full pt-12 gap-x-1 gap-y-14">
+                <div class="part w-full lg:w-[49%] overflow-hidden">
+                    <h3 class="text-4xl mb-4 font-bold underline-yellow relative">Be Live. Always.</h3>
+                    <p class="text-lg mb-4 font-medium">Reach your audience where they are with all the features you expect and more:</p>
+                    <div class="list mb-4 flex-col lg:flex-row flex lg:gap-10 ml-4 w-full leading-10 font-medium">
+                        <ul>
+                            <li>Broadcasts to all devices including mobile</li>
+                            <li>Auto-record events for future sharing</li>
+                            <li>Permanent Custom URL                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="part w-full lg:w-[49%] relative yellow-dot pointer-events-none">
+                    <img src="assets/images/comp.png" class="w-[90%] z-10">
+                    <img src="assets/images/dots-yellow.svg" class="absolute -left-6 -bottom-8 -z-10">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section details 2-->
+    <section class="details flex justify-center items-center w-full mt-10 pb-40 bg-[#f9f8ff]">
+        <div class="wrapper z-10 px-[15px] lg:w-[1170px] flex justify-between">
+            <div class="2col-container flex justify-center items-center flex-wrap w-full pt-12 gap-x-1 gap-y-14">
+                <div class="part w-full lg:w-[49%] overflow-hidden">
+                    <h3 class="text-4xl mb-4 font-bold underline-purple relative">Create your AerialSpaces experience now.</h3>
+                    <p class="text-lg mb-4 font-medium">Deliver the live experience your attendees deserve and reach global audiences in meaningful new ways.</p>
+                    <span onclick="triggerLightBox('form')" class="cursor-pointer my-6 font-semibold text-[#7056FE] block"><i class="fa-sharp fa-solid fa-right"></i> Chat with an online event expert to get started!</span>
+                    <button onclick="triggerLightBox('form')" class="transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded-sm  bg-[#7056FE] hover:bg-[#4523fe]">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Bottom Footer -->
     <section class="bottom bg-[#242424] flex justify-center items-center flex-col">
         <a href="/">
             <img src="assets/images/logo.jpg" alt="Logo">
         </a>
 
-        <ul class="flex gap-4 text-[#b8b8b8] flex-wrap my-6">
+        <form class="sections w-[90%] lg:w-1/2 flex gap-3 flex-col my-5">
+            
+            <input required id="contactFrmName" type="text" class="bg-white rounded-lg w-full p-3" placeholder="Full Name *">
+            <input required id="contactFrmEmail" type="email" class="bg-white rounded-lg w-full p-3" placeholder="Email Address *">
+            <input required id="contactFrmSubject" type="text" class="bg-white rounded-lg w-full p-3" placeholder="Subject">
+            <textarea required id="contactFrmMesage" class="bg-white rounded-lg w-full p-3 h-40" placeholder="Your Message" name="" id=""></textarea>
+            <button type="submit" class="w-full cursor-pointer transition-all ease-in-out delay-100 uppercase px-[25px] py-[12px] text-sm font-semibold text-white rounded  bg-[#37c6f5] hover:bg-[#039ad2]">Submit Message</button>
+        </form>
+
+        <!-- <ul class="flex gap-4 text-[#b8b8b8] flex-wrap my-6">
             <li><a href=""><i
                         class="flex justify-center items-center h-12 w-12 border rounded-full fa-brands fa-facebook-f hover:bg-[#3b3bb4] hover:text-white"></i></a>
             </li>
@@ -204,7 +325,7 @@
             <li><a href=""><i
                         class="flex justify-center items-center h-12 w-12 border rounded-full fa-solid fa-envelope hover:bg-[#b3417a] hover:text-white"></i></a>
             </li>
-        </ul>
+        </ul> -->
 
         <footer class="border-[#434343] border-t py-10 w-full flex justify-center items-center text-lg text-white">
             <p>Built with ❤ <a href="">@BSMdotCo</a></p>
@@ -212,9 +333,8 @@
         <a class="fixed cursor-pointer z-40 bottom-6 right-6 h-10 w-10 rounded-full border-2 bg-gray-200 text-[#00aeff] flex justify-center items-center hover:bg-[#00aeff] hover:text-white"
             onclick="bringToView('.headerImg')" id="BackToTop"><i class="fas fa-chevron-up"></i></a>
     </section>
-
-    <div
-        class="lightbox bg-[#000000ad] backdrop-blur-md z-50 fixed top-0 left-0 w-full h-screen justify-center items-center hidden">
+    
+    <div class="lightbox bg-[#000000ad] backdrop-blur-md z-50 fixed top-0 left-0 w-full h-screen justify-center items-center hidden">
         <div onclick="triggerLightBox()"
             class="closeBtn absolute right-0 top-0 cursor-pointer hover:bg-[#7a2020] bg-[#d34d4d] text-white w-10 h-10 flex justify-center items-center">
             <i class="fa-solid fa-xmark"></i>
@@ -225,23 +345,13 @@
 
             <form class="w-full">
                 <span class="heading text-xl text-center font-bold">
-                    Sign Up
+                    Request a demo
                 </span>
-                <div class="nameContainer flex gap-3 w-full flex-col lg:flex-row">
-                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
-                        <label for="fName" class="block mb-2 text-sm font-medium text-gray-900">First Name</label>
-                        <input type="text" id="fName"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                            required>
-                    </div>
-
-                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
-                        <label for="lName" class="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
-                        <input type="text" id="lName"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                            required>
-                    </div>
-
+                <div class="mb-0 lg:mb-6 w-full">
+                    <label for="fName" class="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                    <input type="text" id="fName"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        placeholder="Full Name" required>
                 </div>
                 <div class="mb-0 lg:mb-6">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
@@ -249,11 +359,18 @@
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                         placeholder="name@example.com" required>
                 </div>
-                <div class="mb-6">
-                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Your password</label>
-                    <input type="password" id="password"
+                <div class="mb-0 lg:mb-6 w-full">
+                    <label for="phoneNo" class="block mb-2 text-sm font-medium text-gray-900">Phone</label>
+                    <input type="text" id="phoneNo"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                        required>
+                        placeholder="Phone" max="10" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="organisation" class="block mb-2 text-sm font-medium text-gray-900 ">Organisation</label>
+                    <input type="text" id="organisation"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        placeholder="Organisation" required>
                 </div>
                 <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
