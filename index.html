@@ -19,7 +19,7 @@
 
 <body class="">
     <!-- Header Image -->
-    <div class="headerImg relative flex justify-start items-center flex-col w-full h-[40vh] lg:h-[120vh] bg-contain lg:bg-cover bg-[url('/assets/images/header-bg.jpg')] font-sans">
+    <div class="headerImg relative flex justify-start items-center flex-col w-full h-[30vh] lg:h-[120vh] bg-contain lg:bg-cover bg-no-repeat bg-[url('/assets/images/header-bg.jpg')] font-sans">
         <div class="overlay absolute bg-[rgba(0,0,0,0.6)] w-full h-full"></div>
         <div class="z-10 w-full h-[90%] flex justify-center items-center flex-col text-center text-content  uppercase">
             <h2 class="text-[25px] lg:text-[80px] text-white font-semibold">VIRTUAL EVENT SaaS</h2>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="cta md:mt-[20px] lg:mt-[90px]">
-                <a onclick="triggerLightBox('form')"
+                <a onclick="triggerLightBox('reqDemo')"
                     class=" cursor-pointer transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Request
                     Demo</a>
             </div>
@@ -64,7 +64,7 @@
                     <ul class="flex gap-10 uppercase text-[#636363]">
                         <li class="cursor-pointer"><a href="/">Home</a></li>
                         <li class="cursor-pointer"><a onclick="bringToView('.FeatureContent')">Features</a></li>
-                        <li class="cursor-pointer"><a onclick="triggerLightBox('form')">Sign-up</a></li>
+                        <li class="cursor-pointer"><a onclick="triggerLightBox('signFrm')">Sign-up</a></li>
                     </ul>
                 </nav>
                 <nav class="relative ml-4 ">
@@ -82,7 +82,7 @@
                 </nav>
             </div>
         </div>
-        <nav class="mobileNav absolute z-20 left-0 -bottom-[120%] gap-4 hidden w-full bg-[#ccc] shadow-lg">
+        <nav class="mobileNav absolute z-20 left-0 -bottom-[120%] gap-4 lg:hidden w-full bg-[#ccc] shadow-lg">
             <ul class="flex flex-col uppercase text-[#636363] w-full ">
                 <li><a class="block px-3 hover:text-[#37c6f5] py-2 text-center" href="/">Home</a></li>
                 <li><a class="block px-3 hover:text-[#37c6f5] py-2 text-center"
@@ -153,8 +153,8 @@
                     with ease.</h3>
             </div>
             <div class="cta md:mt-[5px] lg:mt-[10px]">
-                <a href=""
-                    class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">CREATE
+                <a onclick="triggerLightBox('signFrm')"
+                    class="cursor-pointer transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] lg:px-[40px] lg:py-[25px] text-[11px] lg:text-xl font-semibold text-white rounded border-white border-2 hover:border-[#37c6f5] hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">CREATE
                     YOUR AERIALSPACE NOW</a>
             </div>
         </div>
@@ -189,7 +189,7 @@
             <div class="vertical-content text-white flex flex-col justify-center lg:w-[60%] gap-3">
                 <h2 class="text-[56px] font-semibold  leading-[3.5rem]">The live event tool that delivers experiences</h2>
                 <p class="text-lg font-medium w-[60%] my-3">AerialSpaces lets you customize your online event space for meaningful and on-brand interactions.</p>
-                <a class="cursor-pointer transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded  bg-[#37c6f5] hover:bg-[#039ad2]" onclick="triggerLightBox('form')">Request a demo</a>
+                <a class="cursor-pointer transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded  bg-[#37c6f5] hover:bg-[#039ad2]" onclick="triggerLightBox('reqDemo')">Request a demo</a>
             </div>
         </div>
     </section>
@@ -287,8 +287,8 @@
                 <div class="part w-full lg:w-[49%] overflow-hidden">
                     <h3 class="text-4xl mb-4 font-bold underline-purple relative">Create your AerialSpaces experience now.</h3>
                     <p class="text-lg mb-4 font-medium">Deliver the live experience your attendees deserve and reach global audiences in meaningful new ways.</p>
-                    <span onclick="triggerLightBox('form')" class="cursor-pointer my-6 font-semibold text-[#7056FE] block"><i class="fa-sharp fa-solid fa-right"></i> Chat with an online event expert to get started!</span>
-                    <button onclick="triggerLightBox('form')" class="transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded-sm  bg-[#7056FE] hover:bg-[#4523fe]">Get Started</button>
+                    <span onclick="triggerLightBox('reqDemo')" class="cursor-pointer my-6 font-semibold text-[#7056FE] block"><i class="fa-sharp fa-solid fa-right"></i> Chat with an online event expert to get started!</span>
+                    <button onclick="triggerLightBox('signFrm')" class="transition-all ease-in-out delay-100 uppercase w-fit px-[25px] py-[12px] text-sm font-semibold text-white rounded-sm  bg-[#7056FE] hover:bg-[#4523fe]">Get Started</button>
                 </div>
             </div>
         </div>
@@ -328,7 +328,7 @@
         </ul> -->
 
         <footer class="border-[#434343] border-t py-10 w-full flex justify-center items-center text-lg text-white">
-            <p>Built with ❤ <a href="">@BSMdotCo</a></p>
+            <p>copyright  &copy; <span id="year"></span> aerialspaces</a></p>
         </footer>
         <a class="fixed cursor-pointer z-40 bottom-6 right-6 h-10 w-10 rounded-full border-2 bg-gray-200 text-[#00aeff] flex justify-center items-center hover:bg-[#00aeff] hover:text-white"
             onclick="bringToView('.headerImg')" id="BackToTop"><i class="fas fa-chevron-up"></i></a>
@@ -340,8 +340,7 @@
             <i class="fa-solid fa-xmark"></i>
         </div>
 
-        <div
-            class="modalContent form p-10 w-[90%] lg:w-1/2 rounded-lg shadow-lg justify-center items-center bg-white hidden">
+        <div class="modalContent reqDemo form p-10 w-[90%] lg:w-1/2 rounded-lg shadow-lg justify-center items-center bg-white hidden">
 
             <form class="w-full">
                 <span class="heading text-xl text-center font-bold">
@@ -382,6 +381,55 @@
                 </div>
                 <button type="submit"
                     class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] text-[11px] lg:text-sm font-semibold text-[#37c6f5] rounded  border-2 border-[#37c6f5] hover:text-white hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Submit</button>
+            </form>
+
+        </div>
+
+        <div class="modalContent signFrm form p-10 w-[90%] lg:w-1/2 rounded-lg shadow-lg justify-center items-center bg-white hidden">
+
+            <form class="w-full">
+                <span class="heading text-xl text-center font-bold">
+                    Sign Up
+                </span>
+                <div class="nameContainer flex gap-3 w-full flex-col lg:flex-row">
+                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
+                        <label for="fName" class="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                        <input type="text" id="fName"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            required>
+                    </div>
+
+                    <div class="mb-0 lg:mb-6 w-full lg:w-[48%]">
+                        <label for="lName" class="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
+                        <input type="text" id="lName"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                            required>
+                    </div>
+
+                </div>
+                <div class="mb-0 lg:mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input type="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        placeholder="name@example.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Your password</label>
+                    <input type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                        required>
+                </div>
+                <div class="flex items-start mb-6">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 "
+                            required>
+                    </div>
+                    <label for="remember" class="ms-2 text-sm font-medium text-gray-900">Remember me</label>
+                </div>
+                <button type="submit"
+                class="transition-all ease-in-out delay-100 uppercase py-[10px] px-[15px] text-[11px] lg:text-sm font-semibold text-[#37c6f5] rounded  border-2 border-[#37c6f5] hover:text-white hover:bg-[#37c6f5] focus:border-[#37c6f5] focus:bg-[#37c6f5]">Sign Up</button>
+                
             </form>
 
         </div>

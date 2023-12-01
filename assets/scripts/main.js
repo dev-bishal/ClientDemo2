@@ -3,6 +3,8 @@ var responsiveMenuBar = document.querySelector("nav.mobileNav");
 var searchForm = document.querySelector(".searchFrm");
 var lightboxContainer = document.querySelector(".lightbox");
 
+document.getElementById("year").innerText = new Date().getFullYear();
+
 menuBtn.addEventListener("click", ()=>{
     responsiveMenuBar.classList.toggle("flex");
     responsiveMenuBar.classList.toggle("hidden");
@@ -19,8 +21,21 @@ function triggerLightBox(component){
     lightboxContainer.classList.toggle("hidden");
     lightboxContainer.classList.toggle("flex");
 
-    document.querySelector(".modalContent.form").classList.add("flex");
-    document.querySelector(".modalContent.form").classList.remove("hidden");
+    if(component == "reqDemo"){
+        console.log("test")
+        document.querySelector(".modalContent.reqDemo").classList.add("flex");
+        document.querySelector(".modalContent.reqDemo").classList.remove("hidden");
+
+        document.querySelector(".modalContent.signFrm").classList.add("hidden");
+        document.querySelector(".modalContent.signFrm").classList.remove("flex");
+    }
+    else{
+        document.querySelector(".modalContent.signFrm").classList.add("flex");
+        document.querySelector(".modalContent.signFrm").classList.remove("hidden");
+
+        document.querySelector(".modalContent.reqDemo").classList.add("hidden");
+        document.querySelector(".modalContent.reqDemo").classList.remove("flex");
+    }
 }
 function showSearchForm(){
     searchForm.classList.toggle("translate-x-[200%]");
